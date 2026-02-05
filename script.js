@@ -26,7 +26,8 @@ function libraryDisplay() {
             <td>${book.title}</td>
             <td>${book.author}</td>
             <td>${book.pages}</td>
-            <td>${book.read ? 'Yes' : 'No'}</td>
+            <td><button class="read-toggle-button" data-id="${book.id}">${book.read ? 'Read' : 'Not Read'}</button></td>
+            
             <td>${book.id}</td>
             <td><button class="remove-book-button" data-id="${book.id}">Remove</button></td>
         `;
